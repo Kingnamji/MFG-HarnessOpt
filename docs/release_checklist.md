@@ -1,9 +1,11 @@
-# Release preparation
+# Release record
 
-The repository remains private. Apache-2.0 applies to the original software;
-CITATION.cff records manuscript-order authors and version 1.0.0. Git tag v1.0.0
-fixes the source commit. The artifact release remains an unpublished draft.
-Public access and any publisher-required permanent archive are separate steps.
+Version 1.0.0 is publicly released on 2026-11-03. Apache-2.0 applies to the
+original software; CITATION.cff records manuscript-order authors and the release
+date. Git tag v1.0.0 remains fixed to commit
+`a5a9fb243bc84dc28ffcaec288ddb93f10a3563e`. The ten original artifact bundles retain
+their audited hashes. Publication documentation on main does not move that tag.
+No permanent archive identifier is asserted.
 
 ## Fixed contents
 

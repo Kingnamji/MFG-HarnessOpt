@@ -1,7 +1,7 @@
 {
   "format": "gzip-json-lines",
-  "release_url": "https://github.com/Kingnamji/MFG-HarnessOpt/releases",
-  "release_status": "private_draft",
+  "release_url": "https://github.com/Kingnamji/MFG-HarnessOpt/releases/tag/v1.0.0",
+  "release_status": "public",
   "assets": [
     {
       "file": "AI4I-records.jsonl.gz",

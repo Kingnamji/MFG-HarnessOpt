@@ -76,9 +76,16 @@ identifier rather than the moving `main` branch. The release notes also record
 the full commit identifier. The tag must not be moved; later changes require
 a new version. Citation metadata do not require publishing author email addresses.
 
-## Access status
+## Public release
 
-Version 1.0.0 was fixed on 2026-11-03. The repository remains private and the
-associated artifact release remains an unpublished draft. Access to the
-materials for peer review may be requested from the corresponding author.
-No public-release date or permanent archive identifier is asserted.
+Version **1.0.0** is available from the
+[release page](https://github.com/Kingnamji/MFG-HarnessOpt/releases/tag/v1.0.0).
+Download its ten artifact files to `artifacts/bundles/` and follow the commands
+above. The software is licensed under Apache-2.0; source-data terms are
+documented separately.
+
+The source version supporting the study is tag **v1.0.0**, commit
+`a5a9fb243bc84dc28ffcaec288ddb93f10a3563e`. Use that tag for exact reproduction.
+Publication documentation on `main` may be newer than the fixed source snapshot.
+The tagged README and artifact index retain the access-status labels recorded
+before publication; the linked release provides the current public downloads.
