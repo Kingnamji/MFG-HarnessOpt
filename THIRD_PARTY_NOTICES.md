@@ -37,4 +37,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This third-party notice does not assign a license to the original research code.
+The original research software is licensed under Apache-2.0; see LICENSE and
+NOTICE. This does not replace the third-party terms reproduced above.

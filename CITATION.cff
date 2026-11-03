@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: Please cite this version of MFG-HarnessOpt when using the software or its reproducibility
+  package.
+type: software
+title: 'MFG-HarnessOpt: Manufacturing diagnostic harness optimization and offline result reproduction'
+authors:
+- family-names: Nam
+  given-names: Jihoon
+- family-names: Moon
+  given-names: Sehee
+- family-names: Kim
+  given-names: Myunggun
+- family-names: Park
+  given-names: Minjoo
+- family-names: Cho
+  given-names: Jaebong
+- family-names: Kim
+  given-names: Jaehyuk
+- family-names: Cho
+  given-names: Hyunbo
+version: 1.0.0
+license: Apache-2.0
+repository-code: https://github.com/Kingnamji/MFG-HarnessOpt
+url: https://github.com/Kingnamji/MFG-HarnessOpt/tree/v1.0.0

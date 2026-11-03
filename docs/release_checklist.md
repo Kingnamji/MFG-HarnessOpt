@@ -1,7 +1,9 @@
 # Release preparation
 
-The preparation repository is private. The source-code license, final citation
-metadata and public release status must be settled before publication.
+The repository remains private. Apache-2.0 applies to the original software;
+CITATION.cff records manuscript-order authors and version 1.0.0. Git tag v1.0.0
+fixes the source commit. The artifact release remains an unpublished draft.
+Public access and any publisher-required permanent archive are separate steps.
 
 ## Fixed contents
 

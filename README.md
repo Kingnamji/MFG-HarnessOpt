@@ -62,9 +62,23 @@ Run `python -m tests.check_detectors AI4I` and
 checks. These hand-specified software cases are distinct from empirical test
 reports and do not estimate field-safety or expert-validation accuracy.
 
-## Publication status
+## License and citation
 
-This is a locally verified release candidate. The fixed GitHub release URL,
-commit identifier and software license must be assigned before claiming a
-public, licensed release. The source datasets retain their own terms; see
-`Dataset/README.md`.
+The original software and its original software configuration files are
+licensed under Apache-2.0; see `LICENSE` and `NOTICE`. Third-party data and
+source-derived materials retain their respective terms and attribution
+requirements in `THIRD_PARTY_NOTICES.md` and `Dataset/README.md`.
+
+`CITATION.cff` lists the software authors in the manuscript author order.
+The fixed software version is **1.0.0**, identified by Git tag **v1.0.0**.
+The tag resolves to the exact source commit; cite that tag and its full commit
+identifier rather than the moving `main` branch. The release notes also record
+the full commit identifier. The tag must not be moved; later changes require
+a new version. Citation metadata do not require publishing author email addresses.
+
+## Access status
+
+Version 1.0.0 was fixed on 2026-11-03. The repository remains private and the
+associated artifact release remains an unpublished draft. Access to the
+materials for peer review may be requested from the corresponding author.
+No public-release date or permanent archive identifier is asserted.

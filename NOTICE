@@ -1,0 +1,15 @@
+MFG-HarnessOpt
+Copyright 2026 MFG-HarnessOpt contributors.
+
+The original MFG-HarnessOpt software and its original software configuration
+files are licensed under the Apache License, Version 2.0. This includes the
+original code in experiments/, comparison_protocol/, analysis/,
+nonllm_baselines/, reproduce/, and tests/.
+
+This software license does not replace the terms of third-party datasets,
+source-derived diagnostic guides, or third-party content embedded in saved
+experimental artifacts. AI4I source material retains its CC BY 4.0 attribution
+conditions. Microsoft source material retains its MIT notice. See
+THIRD_PARTY_NOTICES.md and Dataset/README.md for the source notices and the
+research transformations. The artifact index identifies the saved data and
+outputs separately from the original software.
