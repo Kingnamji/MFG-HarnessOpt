@@ -1,0 +1,91 @@
+method_id: M3
+name: manually_verified_harness
+display_name: M3 Fixed verified harness
+
+description: >
+  Fixed manually designed verified harness. The model receives the same
+  source-aware diagnostic evidence table and identical initial prompt as M2,
+  followed by deterministic verification, at most one fixed repair step when
+  predefined violations are detected, and observable final action removal or
+  downgrade. Original and repaired model responses are retained separately.
+
+llm_input:
+  include_task_context: true
+  include_allowed_schema: true
+  include_action_ontology: true
+  include_proxy_evidence_table: true
+  evidence_table_source: generation_evidence
+  include_static_summary: true
+  expose_gold_label: false
+
+  # Critical anti-leakage setting:
+  expose_supports: false
+
+  evidence_table_columns:
+    - evidence_id
+    - source
+    - field
+    - statistic
+    - direction
+    - value
+    - raw_value
+    - window
+    - event_time
+    - strength
+    - role
+
+harness_components:
+  source_policy: true
+  static_summary: true
+  tool_source_access: true
+  diagnostic_evidence_table: true
+  deterministic_verifier: true
+  action_validity_filter: true
+  repair_loop: true
+
+verification:
+  runtime_scope: observable_records_only
+  offline_targets_available_to_runtime: false
+  deterministic_primary_evaluation: true
+  llm_judge_primary_metrics: false
+
+repair:
+  enabled: true
+  max_repair_steps: 1
+
+  triggers:
+    schema_invalid: true
+    evidence_contradiction_F3: true
+    temporal_violation_F4: true
+    observable_evidence_error: true
+    source_hallucination_F5: true
+    causal_overclaim_F6: true
+    action_without_evidence_F7: true
+    high_risk_action_violation_F8: true
+    unsafe_recommendation_rate_gt: 0.0
+
+  fixed_repair_prompt: true
+  adaptive_failure_trace_optimization: false
+
+  action_validity_notes:
+    verify_sensor_requires_telemetry_or_sensor_evidence: true
+    error_log_only_evidence_cannot_justify_verify_sensor: true
+    out_of_scope_actions:
+      - adjust_parameter
+      - shutdown
+
+output_constraints:
+  structured_output_schema: true
+  require_predicted_label: true
+  require_evidence: true
+  require_evidence_supports_field: true
+  require_next_steps: true
+  require_limitations: true
+
+cost_behavior:
+  expected_source_access_count: variable
+  expected_tool_call_count: 4
+  allow_repair_call: true
+  max_extra_llm_calls_per_task: 1
+
+role_in_experiment: baseline

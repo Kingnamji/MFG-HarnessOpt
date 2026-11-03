@@ -1,0 +1,60 @@
+method_id: M2
+name: tool_source_use_harness
+display_name: M2 Tool/source-use harness
+
+description: >
+  Source-aware diagnostic harness. The model receives a diagnostic evidence
+  table and the same competent initial prompt as M3, including public diagnosis,
+  evidence-copy and action-prerequisite guidance. No post-generation deterministic
+  verification, action filter, or repair feedback is applied.
+
+llm_input:
+  include_task_context: true
+  include_allowed_schema: true
+  include_action_ontology: true
+  include_proxy_evidence_table: true
+  evidence_table_source: generation_evidence
+  include_static_summary: true
+  expose_gold_label: false
+
+  # Critical anti-leakage setting:
+  # The hidden proxy 'supports' annotation is used only by the evaluator and is
+  # never exposed to the LLM input table.
+  expose_supports: false
+
+  evidence_table_columns:
+    - evidence_id
+    - source
+    - field
+    - statistic
+    - direction
+    - value
+    - raw_value
+    - window
+    - event_time
+    - strength
+    - role
+
+harness_components:
+  source_policy: true
+  static_summary: true
+  tool_source_access: true
+  diagnostic_evidence_table: true
+  deterministic_verifier: false
+  action_validity_filter: false
+  repair_loop: false
+
+output_constraints:
+  structured_output_schema: true
+  require_predicted_label: true
+  require_evidence: true
+  require_evidence_supports_field: true
+  require_next_steps: true
+  require_limitations: true
+
+cost_behavior:
+  expected_source_access_count: variable
+  expected_tool_call_count: 2
+  allow_repair_call: false
+
+role_in_experiment: baseline

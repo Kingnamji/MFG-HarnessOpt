@@ -1,0 +1,854 @@
+{
+  "dataset": "Azure PdM",
+  "guide_name": "azure_search_association_guide",
+  "description": "Aggregate component association guide computed only from the Azure PdM search split. Use as weak prior; do not treat as task-level ground truth.",
+  "leakage_control": {
+    "uses_split": "search",
+    "uses_validation_labels": false,
+    "uses_test_labels": false,
+    "exposes_task_level_gold_label": false,
+    "exposes_task_level_supports": false,
+    "allowed_use": "weak_prior_for_prompting"
+  },
+  "configuration": {
+    "min_count": 5,
+    "top_k_per_group": 8,
+    "candidate_labels": [
+      "comp1",
+      "comp2",
+      "comp3",
+      "comp4"
+    ]
+  },
+  "search_split_summary": {
+    "n_tasks": 100,
+    "n_tasks_with_evidence": 100,
+    "label_counts": {
+      "comp1": 23,
+      "comp2": 32,
+      "comp3": 21,
+      "comp4": 24
+    },
+    "evidence_source_counts": {
+      "telemetry": 192,
+      "errors": 155,
+      "maintenance": 152
+    }
+  },
+  "error_associations": [
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error3",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error3",
+      "direction": null,
+      "n": 35,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 32,
+        "comp3": 1,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.0286,
+        "comp2": 0.9143,
+        "comp3": 0.0286,
+        "comp4": 0.0286
+      },
+      "top_component": "comp2",
+      "top_probability": 0.9143,
+      "entropy": 0.5582,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error2",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error2",
+      "direction": null,
+      "n": 36,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 32,
+        "comp3": 2,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.0278,
+        "comp2": 0.8889,
+        "comp3": 0.0556,
+        "comp4": 0.0278
+      },
+      "top_component": "comp2",
+      "top_probability": 0.8889,
+      "entropy": 0.6702,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error5",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error5",
+      "direction": null,
+      "n": 29,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 2,
+        "comp3": 2,
+        "comp4": 24
+      },
+      "component_distribution": {
+        "comp1": 0.0345,
+        "comp2": 0.069,
+        "comp3": 0.069,
+        "comp4": 0.8276
+      },
+      "top_component": "comp4",
+      "top_probability": 0.8276,
+      "entropy": 0.9258,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error1",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error1",
+      "direction": null,
+      "n": 28,
+      "component_counts": {
+        "comp1": 23,
+        "comp2": 1,
+        "comp3": 0,
+        "comp4": 4
+      },
+      "component_distribution": {
+        "comp1": 0.8214,
+        "comp2": 0.0357,
+        "comp3": 0.0,
+        "comp4": 0.1429
+      },
+      "top_component": "comp1",
+      "top_probability": 0.8214,
+      "entropy": 0.8059,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error4",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error4",
+      "direction": null,
+      "n": 27,
+      "component_counts": {
+        "comp1": 3,
+        "comp2": 2,
+        "comp3": 21,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.1111,
+        "comp2": 0.0741,
+        "comp3": 0.7778,
+        "comp4": 0.037
+      },
+      "top_component": "comp3",
+      "top_probability": 0.7778,
+      "entropy": 1.0884,
+      "confidence": "high"
+    }
+  ],
+  "telemetry_associations": [
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:rotate:low",
+      "source": "telemetry",
+      "field": "rotate",
+      "value": null,
+      "direction": "low",
+      "n": 44,
+      "component_counts": {
+        "comp1": 3,
+        "comp2": 29,
+        "comp3": 8,
+        "comp4": 4
+      },
+      "component_distribution": {
+        "comp1": 0.0682,
+        "comp2": 0.6591,
+        "comp3": 0.1818,
+        "comp4": 0.0909
+      },
+      "top_component": "comp2",
+      "top_probability": 0.6591,
+      "entropy": 1.4222,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:vibration:high",
+      "source": "telemetry",
+      "field": "vibration",
+      "value": null,
+      "direction": "high",
+      "n": 37,
+      "component_counts": {
+        "comp1": 4,
+        "comp2": 7,
+        "comp3": 3,
+        "comp4": 23
+      },
+      "component_distribution": {
+        "comp1": 0.1081,
+        "comp2": 0.1892,
+        "comp3": 0.0811,
+        "comp4": 0.6216
+      },
+      "top_component": "comp4",
+      "top_probability": 0.6216,
+      "entropy": 1.5217,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:vibration:low",
+      "source": "telemetry",
+      "field": "vibration",
+      "value": null,
+      "direction": "low",
+      "n": 15,
+      "component_counts": {
+        "comp1": 5,
+        "comp2": 9,
+        "comp3": 1,
+        "comp4": 0
+      },
+      "component_distribution": {
+        "comp1": 0.3333,
+        "comp2": 0.6,
+        "comp3": 0.0667,
+        "comp4": 0.0
+      },
+      "top_component": "comp2",
+      "top_probability": 0.6,
+      "entropy": 1.231,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:rotate:high",
+      "source": "telemetry",
+      "field": "rotate",
+      "value": null,
+      "direction": "high",
+      "n": 10,
+      "component_counts": {
+        "comp1": 6,
+        "comp2": 0,
+        "comp3": 2,
+        "comp4": 2
+      },
+      "component_distribution": {
+        "comp1": 0.6,
+        "comp2": 0.0,
+        "comp3": 0.2,
+        "comp4": 0.2
+      },
+      "top_component": "comp1",
+      "top_probability": 0.6,
+      "entropy": 1.371,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:pressure:high",
+      "source": "telemetry",
+      "field": "pressure",
+      "value": null,
+      "direction": "high",
+      "n": 35,
+      "component_counts": {
+        "comp1": 2,
+        "comp2": 6,
+        "comp3": 20,
+        "comp4": 7
+      },
+      "component_distribution": {
+        "comp1": 0.0571,
+        "comp2": 0.1714,
+        "comp3": 0.5714,
+        "comp4": 0.2
+      },
+      "top_component": "comp3",
+      "top_probability": 0.5714,
+      "entropy": 1.5977,
+      "confidence": "medium"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:volt:high",
+      "source": "telemetry",
+      "field": "volt",
+      "value": null,
+      "direction": "high",
+      "n": 33,
+      "component_counts": {
+        "comp1": 18,
+        "comp2": 6,
+        "comp3": 4,
+        "comp4": 5
+      },
+      "component_distribution": {
+        "comp1": 0.5455,
+        "comp2": 0.1818,
+        "comp3": 0.1212,
+        "comp4": 0.1515
+      },
+      "top_component": "comp1",
+      "top_probability": 0.5455,
+      "entropy": 1.7056,
+      "confidence": "medium"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:pressure:low",
+      "source": "telemetry",
+      "field": "pressure",
+      "value": null,
+      "direction": "low",
+      "n": 14,
+      "component_counts": {
+        "comp1": 5,
+        "comp2": 4,
+        "comp3": 0,
+        "comp4": 5
+      },
+      "component_distribution": {
+        "comp1": 0.3571,
+        "comp2": 0.2857,
+        "comp3": 0.0,
+        "comp4": 0.3571
+      },
+      "top_component": "comp1",
+      "top_probability": 0.3571,
+      "entropy": 1.5774,
+      "confidence": "low"
+    }
+  ],
+  "maintenance_associations": [
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp4",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp4",
+      "direction": null,
+      "n": 38,
+      "component_counts": {
+        "comp1": 13,
+        "comp2": 16,
+        "comp3": 9,
+        "comp4": 0
+      },
+      "component_distribution": {
+        "comp1": 0.3421,
+        "comp2": 0.4211,
+        "comp3": 0.2368,
+        "comp4": 0.0
+      },
+      "top_component": "comp2",
+      "top_probability": 0.4211,
+      "entropy": 1.547,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp1",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp1",
+      "direction": null,
+      "n": 35,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 14,
+        "comp3": 11,
+        "comp4": 9
+      },
+      "component_distribution": {
+        "comp1": 0.0286,
+        "comp2": 0.4,
+        "comp3": 0.3143,
+        "comp4": 0.2571
+      },
+      "top_component": "comp2",
+      "top_probability": 0.4,
+      "entropy": 1.7041,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp3",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp3",
+      "direction": null,
+      "n": 40,
+      "component_counts": {
+        "comp1": 12,
+        "comp2": 13,
+        "comp3": 0,
+        "comp4": 15
+      },
+      "component_distribution": {
+        "comp1": 0.3,
+        "comp2": 0.325,
+        "comp3": 0.0,
+        "comp4": 0.375
+      },
+      "top_component": "comp4",
+      "top_probability": 0.375,
+      "entropy": 1.5787,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp2",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp2",
+      "direction": null,
+      "n": 39,
+      "component_counts": {
+        "comp1": 12,
+        "comp2": 8,
+        "comp3": 9,
+        "comp4": 10
+      },
+      "component_distribution": {
+        "comp1": 0.3077,
+        "comp2": 0.2051,
+        "comp3": 0.2308,
+        "comp4": 0.2564
+      },
+      "top_component": "comp1",
+      "top_probability": 0.3077,
+      "entropy": 1.9836,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    }
+  ],
+  "top_associations": [
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error3",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error3",
+      "direction": null,
+      "n": 35,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 32,
+        "comp3": 1,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.0286,
+        "comp2": 0.9143,
+        "comp3": 0.0286,
+        "comp4": 0.0286
+      },
+      "top_component": "comp2",
+      "top_probability": 0.9143,
+      "entropy": 0.5582,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error2",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error2",
+      "direction": null,
+      "n": 36,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 32,
+        "comp3": 2,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.0278,
+        "comp2": 0.8889,
+        "comp3": 0.0556,
+        "comp4": 0.0278
+      },
+      "top_component": "comp2",
+      "top_probability": 0.8889,
+      "entropy": 0.6702,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error5",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error5",
+      "direction": null,
+      "n": 29,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 2,
+        "comp3": 2,
+        "comp4": 24
+      },
+      "component_distribution": {
+        "comp1": 0.0345,
+        "comp2": 0.069,
+        "comp3": 0.069,
+        "comp4": 0.8276
+      },
+      "top_component": "comp4",
+      "top_probability": 0.8276,
+      "entropy": 0.9258,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error1",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error1",
+      "direction": null,
+      "n": 28,
+      "component_counts": {
+        "comp1": 23,
+        "comp2": 1,
+        "comp3": 0,
+        "comp4": 4
+      },
+      "component_distribution": {
+        "comp1": 0.8214,
+        "comp2": 0.0357,
+        "comp3": 0.0,
+        "comp4": 0.1429
+      },
+      "top_component": "comp1",
+      "top_probability": 0.8214,
+      "entropy": 0.8059,
+      "confidence": "high"
+    },
+    {
+      "type": "error_component_association",
+      "evidence_key": "errors:errorID:error4",
+      "source": "errors",
+      "field": "errorID",
+      "value": "error4",
+      "direction": null,
+      "n": 27,
+      "component_counts": {
+        "comp1": 3,
+        "comp2": 2,
+        "comp3": 21,
+        "comp4": 1
+      },
+      "component_distribution": {
+        "comp1": 0.1111,
+        "comp2": 0.0741,
+        "comp3": 0.7778,
+        "comp4": 0.037
+      },
+      "top_component": "comp3",
+      "top_probability": 0.7778,
+      "entropy": 1.0884,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:rotate:low",
+      "source": "telemetry",
+      "field": "rotate",
+      "value": null,
+      "direction": "low",
+      "n": 44,
+      "component_counts": {
+        "comp1": 3,
+        "comp2": 29,
+        "comp3": 8,
+        "comp4": 4
+      },
+      "component_distribution": {
+        "comp1": 0.0682,
+        "comp2": 0.6591,
+        "comp3": 0.1818,
+        "comp4": 0.0909
+      },
+      "top_component": "comp2",
+      "top_probability": 0.6591,
+      "entropy": 1.4222,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:vibration:high",
+      "source": "telemetry",
+      "field": "vibration",
+      "value": null,
+      "direction": "high",
+      "n": 37,
+      "component_counts": {
+        "comp1": 4,
+        "comp2": 7,
+        "comp3": 3,
+        "comp4": 23
+      },
+      "component_distribution": {
+        "comp1": 0.1081,
+        "comp2": 0.1892,
+        "comp3": 0.0811,
+        "comp4": 0.6216
+      },
+      "top_component": "comp4",
+      "top_probability": 0.6216,
+      "entropy": 1.5217,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:vibration:low",
+      "source": "telemetry",
+      "field": "vibration",
+      "value": null,
+      "direction": "low",
+      "n": 15,
+      "component_counts": {
+        "comp1": 5,
+        "comp2": 9,
+        "comp3": 1,
+        "comp4": 0
+      },
+      "component_distribution": {
+        "comp1": 0.3333,
+        "comp2": 0.6,
+        "comp3": 0.0667,
+        "comp4": 0.0
+      },
+      "top_component": "comp2",
+      "top_probability": 0.6,
+      "entropy": 1.231,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:rotate:high",
+      "source": "telemetry",
+      "field": "rotate",
+      "value": null,
+      "direction": "high",
+      "n": 10,
+      "component_counts": {
+        "comp1": 6,
+        "comp2": 0,
+        "comp3": 2,
+        "comp4": 2
+      },
+      "component_distribution": {
+        "comp1": 0.6,
+        "comp2": 0.0,
+        "comp3": 0.2,
+        "comp4": 0.2
+      },
+      "top_component": "comp1",
+      "top_probability": 0.6,
+      "entropy": 1.371,
+      "confidence": "high"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:pressure:high",
+      "source": "telemetry",
+      "field": "pressure",
+      "value": null,
+      "direction": "high",
+      "n": 35,
+      "component_counts": {
+        "comp1": 2,
+        "comp2": 6,
+        "comp3": 20,
+        "comp4": 7
+      },
+      "component_distribution": {
+        "comp1": 0.0571,
+        "comp2": 0.1714,
+        "comp3": 0.5714,
+        "comp4": 0.2
+      },
+      "top_component": "comp3",
+      "top_probability": 0.5714,
+      "entropy": 1.5977,
+      "confidence": "medium"
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:volt:high",
+      "source": "telemetry",
+      "field": "volt",
+      "value": null,
+      "direction": "high",
+      "n": 33,
+      "component_counts": {
+        "comp1": 18,
+        "comp2": 6,
+        "comp3": 4,
+        "comp4": 5
+      },
+      "component_distribution": {
+        "comp1": 0.5455,
+        "comp2": 0.1818,
+        "comp3": 0.1212,
+        "comp4": 0.1515
+      },
+      "top_component": "comp1",
+      "top_probability": 0.5455,
+      "entropy": 1.7056,
+      "confidence": "medium"
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp4",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp4",
+      "direction": null,
+      "n": 38,
+      "component_counts": {
+        "comp1": 13,
+        "comp2": 16,
+        "comp3": 9,
+        "comp4": 0
+      },
+      "component_distribution": {
+        "comp1": 0.3421,
+        "comp2": 0.4211,
+        "comp3": 0.2368,
+        "comp4": 0.0
+      },
+      "top_component": "comp2",
+      "top_probability": 0.4211,
+      "entropy": 1.547,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp1",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp1",
+      "direction": null,
+      "n": 35,
+      "component_counts": {
+        "comp1": 1,
+        "comp2": 14,
+        "comp3": 11,
+        "comp4": 9
+      },
+      "component_distribution": {
+        "comp1": 0.0286,
+        "comp2": 0.4,
+        "comp3": 0.3143,
+        "comp4": 0.2571
+      },
+      "top_component": "comp2",
+      "top_probability": 0.4,
+      "entropy": 1.7041,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp3",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp3",
+      "direction": null,
+      "n": 40,
+      "component_counts": {
+        "comp1": 12,
+        "comp2": 13,
+        "comp3": 0,
+        "comp4": 15
+      },
+      "component_distribution": {
+        "comp1": 0.3,
+        "comp2": 0.325,
+        "comp3": 0.0,
+        "comp4": 0.375
+      },
+      "top_component": "comp4",
+      "top_probability": 0.375,
+      "entropy": 1.5787,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    },
+    {
+      "type": "telemetry_component_association",
+      "evidence_key": "telemetry:pressure:low",
+      "source": "telemetry",
+      "field": "pressure",
+      "value": null,
+      "direction": "low",
+      "n": 14,
+      "component_counts": {
+        "comp1": 5,
+        "comp2": 4,
+        "comp3": 0,
+        "comp4": 5
+      },
+      "component_distribution": {
+        "comp1": 0.3571,
+        "comp2": 0.2857,
+        "comp3": 0.0,
+        "comp4": 0.3571
+      },
+      "top_component": "comp1",
+      "top_probability": 0.3571,
+      "entropy": 1.5774,
+      "confidence": "low"
+    },
+    {
+      "type": "maintenance_component_association",
+      "evidence_key": "maintenance:comp:comp2",
+      "source": "maintenance",
+      "field": "comp",
+      "value": "comp2",
+      "direction": null,
+      "n": 39,
+      "component_counts": {
+        "comp1": 12,
+        "comp2": 8,
+        "comp3": 9,
+        "comp4": 10
+      },
+      "component_distribution": {
+        "comp1": 0.3077,
+        "comp2": 0.2051,
+        "comp3": 0.2308,
+        "comp4": 0.2564
+      },
+      "top_component": "comp1",
+      "top_probability": 0.3077,
+      "entropy": 1.9836,
+      "confidence": "low",
+      "note": "Maintenance evidence is contextual by default and should not be treated as causal by itself."
+    }
+  ]
+}

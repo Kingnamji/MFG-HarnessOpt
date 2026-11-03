@@ -1,0 +1,974 @@
+{
+  "status": "PASS",
+  "dataset": "AI4I",
+  "generation_calls": 0,
+  "network_calls": 0,
+  "fit_calls": 0,
+  "new_empirical_test_evaluations": 0,
+  "detector_rows": [
+    {
+      "id": "F4_ai_static",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_ai_static",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_ai_static_alias",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_ai_static_alias",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_ai_invented_temporal_window",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_ai_invented_temporal_window",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_static_invented_timestamp",
+      "dataset": "AI4I",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_static_invented_timestamp",
+      "dataset": "AI4I",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_ai_type_context",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_ai_type_context",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_ai_type_causal",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_ai_type_causal",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_AI4I_replace_two_diagnostic",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_AI4I_replace_two_diagnostic",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_AI4I_one_evidence",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_one_evidence",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_duplicate_refs",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_duplicate_refs",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_missing_refs",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_missing_refs",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_context_as_second",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_context_as_second",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_wrong_target",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_wrong_target",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_inspect_without_highrisk",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_AI4I_inspect_without_highrisk",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_AI4I_shutdown",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_shutdown",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_adjust_parameter",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_adjust_parameter",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_invalid_numeric_evidence",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_AI4I_invalid_numeric_evidence",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_no_failure_replacement",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_no_failure_replacement",
+      "dataset": "AI4I",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    }
+  ],
+  "repair_states": [
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "no_repair",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "wrong_gold_only",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 1,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "corrected_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "persistent_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "introduced_window",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "introduced_schema",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "filter_clears_action",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "id": "action_cleared_value_persists",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "no_repair",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "wrong_gold_only",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 1,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "corrected_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "persistent_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "introduced_window",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "introduced_schema",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "filter_clears_action",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "id": "action_cleared_value_persists",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    }
+  ],
+  "summary": [
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "positive": 1,
+      "negative": 2,
+      "TP": 1,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "positive": 1,
+      "negative": 2,
+      "TP": 1,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "positive": 1,
+      "negative": 0,
+      "TP": 1,
+      "FN": 0,
+      "TN": 0,
+      "FP": 0
+    },
+    {
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "positive": 1,
+      "negative": 0,
+      "TP": 1,
+      "FN": 0,
+      "TN": 0,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "positive": 1,
+      "negative": 1,
+      "TP": 1,
+      "FN": 0,
+      "TN": 1,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "positive": 1,
+      "negative": 1,
+      "TP": 1,
+      "FN": 0,
+      "TN": 1,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "positive": 9,
+      "negative": 2,
+      "TP": 9,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "positive": 9,
+      "negative": 2,
+      "TP": 9,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "repair_control_flow",
+      "route": "M3",
+      "category": "F10",
+      "positive": 4,
+      "negative": 4,
+      "TP": 4,
+      "FN": 0,
+      "TN": 4,
+      "FP": 0
+    },
+    {
+      "scope": "repair_control_flow",
+      "route": "M4",
+      "category": "F10",
+      "positive": 4,
+      "negative": 4,
+      "TP": 4,
+      "FN": 0,
+      "TN": 4,
+      "FP": 0
+    }
+  ]
+}

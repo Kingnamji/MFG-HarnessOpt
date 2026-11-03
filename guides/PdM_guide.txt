@@ -1,0 +1,6 @@
+Dataset label decision guide:
+- Candidate labels comp1, comp2, comp3, and comp4 denote the failed component for the event.
+- Telemetry anomalies and error events in the pre-failure window are symptomatic evidence.
+- Maintenance records are contextual by default, not causal by themselves.
+- If a maintenance evidence value names a component such as comp1, comp2, comp3, or comp4, use it as contextual support for that component but do not overstate it as causal.
+- If evidence is ambiguous across components, select the most plausible component, use low confidence, and state the ambiguity.

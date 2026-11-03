@@ -1,0 +1,49 @@
+{
+  "version": "observable_checks_v4",
+  "generation_protocol": "observation_only_v2",
+  "status": "v4 normal/context claim semantics fixed before prospective API reruns; historical outputs retained under their original versions",
+  "normal_exclusion_evidence": {
+    "supports_contract": "Exactly one candidate label or context. Compound, negated, multi-label or explanatory supports strings are not silently parsed into a favorable label. Explanations belong in limitations.",
+    "precision": "A factually matching generated context claim can count for Precision, including when its proxy target has diagnostic support. A proxy context record cannot validate an arbitrary generated fault or No Failure assertion.",
+    "recall": "Only a matching generated assertion of the same non-context target label covers a required proxy target. Calling a diagnostic target context gives no diagnostic Recall credit.",
+    "normal": "Normal directions are neither automatically accepted nor automatically rejected. Asserted support must match the hidden proxy support after all frozen factual/role/window checks; a normal record does not support the fault it excludes.",
+    "role": "Copy the observation role. Do not convert symptomatic to exclusionary merely to explain exclusion. No generation-visible target annotations or new proxy targets are introduced.",
+    "versions": "Report contract diagnostic_contract_v5; evaluation observable_checks_v4. Paper metric formulas, weights, proxy data and historical scores are unchanged. Any rescoring is separately identified."
+  },
+  "F4": {
+    "report_rule": "Wrong named observation window, or an explicitly supplied timestamp inconsistent with the matched observable record, is a temporal violation.",
+    "input_admission": "Azure telemetry/errors: [failure_time - 24h, failure_time); maintenance: [failure_time - 30d, failure_time). Validated before the first API call. Task labels are not read.",
+    "static_data": "AI4I has no physical event-time evaluation. Only malformed static windows/invented timestamps can be challenged; these do not establish temporal performance on AI4I.",
+    "omitted_timestamp": "Permitted in generated reports if the named record/window matches. The current strict model JSON schema has no event_time property; explicit timestamp tests are parser-extension tests, not a claim about current model output coverage.",
+    "alternative_references": "A fully matching record must not inherit errors from previously checked alternatives. Source/field/record availability is F5 rather than a temporal violation."
+  },
+  "F6": {
+    "rule": "A contextual source or a reference observation with role contextual is promoted to structured role causal.",
+    "sources": "Azure maintenance/machines are contextual; AI4I type is contextual at record level.",
+    "scope": "Structured evidence-role compliance only. Free-text wording, negation in limitations, and actual physical root cause are not adjudicated by this detector."
+  },
+  "F8": {
+    "rule": "Forbidden shutdown/adjust_parameter, or replace_component without its fixed preconditions.",
+    "replacement_preconditions": [
+      "Action allowed by ontology",
+      "Predicted label is not No Failure",
+      "Target contains the predicted label as a whole token, not comp2 inside comp20",
+      "At least two distinct matched evidence IDs with non-contextual role and generated supports equal to the predicted label"
+    ],
+    "separation": "Low-risk unsupported actions can be F7 without F8. Unknown/out-of-ontology actions are schema/unsafe violations, not automatically a high-risk category. This is a fixed report-policy check, not field-safety certification."
+  },
+  "empty_evidence": {
+    "precision": "P_i = matched generated claims / generated claims if generated>0; otherwise 0. All reports, including empty ones, enter the macro Precision denominator N.",
+    "recall": "R_i = covered required targets / required targets if required>0; otherwise undefined (None/blank). Macro Recall uses only reports with required>0, and publishes that count. If none qualify, report undefined.",
+    "omission": "Generated=0 and required>0 gives Recall=0 and F2=1. Generated=required=0 gives Precision=0, Recall undefined, F2=0.",
+    "context": "Matched context may count for Precision but not required-target Recall numerator/denominator. Invented claims against an empty reference are ungrounded, not vacuously correct."
+  },
+  "empty_actions": {
+    "link_ratio": "Undefined when no actions; report macro only over nonempty-action reports.",
+    "unsafe": "0 for a report with no actions, preserving the Paper convention. Publish action coverage and unsafe rate among nonempty-action reports alongside the all-report mean.",
+    "selection": "No positive action credit for empty-action reports: replace their undefined link ratio with 0 only in J_mfg. Never use 1-unsafe as a substitute grounding score. All-undefined Recall gives no Recall credit in selection.",
+    "coverage": "Publish empty evidence/actions, required-target count, action coverage and evidence-linked-action coverage. A zero violation rate with no recommendations does not establish safety/usefulness."
+  },
+  "validation_scope": "Manually specified software fixtures with expected flags independent of evaluator outputs, boundary controls, production repair wiring with a fake client, and existing input independence regressions. No expert labeling, physical-cause validation, model reliability estimate or API-based experiment is claimed.",
+  "original_results": "Paper TeX quantitative results and historical outputs are preserved. Revised evaluator/repair results require new runs or explicitly identified offline rescoring; the protocols must not be mixed."
+}

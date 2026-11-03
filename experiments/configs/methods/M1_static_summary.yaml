@@ -1,0 +1,40 @@
+method_id: M1
+name: static_summary_harness
+display_name: M1 Static-summary harness
+
+description: >
+  Static diagnostic summary harness. The model receives task-level fields and
+  derived/static indicators, but does not receive a diagnostic evidence table
+  with source-level retrieval or verification feedback.
+
+llm_input:
+  include_task_context: true
+  include_allowed_schema: true
+  include_action_ontology: true
+  include_proxy_evidence_table: false
+  include_static_summary: true
+  expose_gold_label: false
+  expose_supports: false
+
+harness_components:
+  source_policy: false
+  static_summary: true
+  tool_source_access: false
+  diagnostic_evidence_table: false
+  deterministic_verifier: false
+  action_validity_filter: false
+  repair_loop: false
+
+output_constraints:
+  structured_output_schema: true
+  require_predicted_label: true
+  require_evidence: true
+  require_next_steps: true
+  require_limitations: true
+
+cost_behavior:
+  expected_source_access_count: 1
+  expected_tool_call_count: 1
+  allow_repair_call: false
+
+role_in_experiment: baseline

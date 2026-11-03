@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "datasets": [
+    {
+      "dataset": "AI4I",
+      "status": "PASS",
+      "files": [
+        "ai4i_features.csv",
+        "allowed_schema_ai4i.json",
+        "generation_evidence_ai4i.csv",
+        "metric_config_ai4i.json",
+        "proxy_evidence_ai4i.csv",
+        "tasks_ai4i.csv"
+      ]
+    },
+    {
+      "dataset": "PdM",
+      "status": "PASS",
+      "files": [
+        "action_ontology.json",
+        "action_preconditions.json",
+        "allowed_schema_azure.json",
+        "azure_observation_context.json",
+        "azure_search_association_guide.json",
+        "azure_search_association_guide.txt",
+        "azure_telemetry_summary.csv",
+        "event_windows_azure.csv",
+        "generation_evidence_azure.csv",
+        "generic_action_rules.json",
+        "metric_config_azure.json",
+        "proxy_evidence_azure.csv",
+        "tasks_azure.csv"
+      ]
+    }
+  ],
+  "scientific_results_match_verified_analysis": true,
+  "model_facing_payload_unchanged": {
+    "AI4I": {
+      "request_unchanged": 22845,
+      "response_unchanged": 22843
+    },
+    "PdM": {
+      "request_unchanged": 23075,
+      "response_unchanged": 23072
+    }
+  }
+}

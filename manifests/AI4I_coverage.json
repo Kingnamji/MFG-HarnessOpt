@@ -1,0 +1,52 @@
+{
+  "dataset": "AI4I",
+  "test_groups": 48,
+  "CPU_groups": 6,
+  "same_label_groups": 12,
+  "physical_calls": 22845,
+  "statuses": {
+    "completed": 22843,
+    "usage_reconciled_unbilled": 1,
+    "usage_reconciled_paid_output_unavailable": 1
+  },
+  "costs": {
+    "cost_usd_actual": 96.27725549999968,
+    "cost_usd_uncached": 121.7678475000003
+  },
+  "raw_integrity": {
+    "request_unchanged": 22845,
+    "response_unchanged": 22843
+  },
+  "assets": [
+    {
+      "file": "AI4I-records.jsonl.gz",
+      "sha256": "2bee25f57c40b8bc9c64ab8fe1cae18932ff439bdf4d3320b4d5ccaf5213894c",
+      "bytes": 138279164,
+      "records": 9900
+    },
+    {
+      "file": "AI4I-search.jsonl.gz",
+      "sha256": "c27556a5702f49012b4bab80b29ed976026fd635a229a0c21acc5a08050af599",
+      "bytes": 362685973,
+      "records": 14550
+    },
+    {
+      "file": "AI4I-calls.jsonl.gz",
+      "sha256": "187d9f1aafca0703120341e75d935bc3848473ccd5f67d6bffae2101d503917e",
+      "bytes": 200902002,
+      "records": 22845
+    },
+    {
+      "file": "AI4I-usage.jsonl.gz",
+      "sha256": "ac2bd2c6351790c75282f43480811bf90b6348b7bc067ef30d85ed8123dd3c4e",
+      "bytes": 5228492,
+      "records": 22845
+    },
+    {
+      "file": "AI4I-analysis.jsonl.gz",
+      "sha256": "fc37d65e8a905f7a81004c874a99e0fbb83774900f34a53a3394aceaae848ca4",
+      "bytes": 13866947,
+      "records": 1
+    }
+  ]
+}

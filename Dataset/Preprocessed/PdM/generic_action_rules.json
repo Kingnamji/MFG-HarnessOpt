@@ -1,0 +1,18 @@
+{
+  "generic_if": {
+    "action_type_in": [
+      "monitor",
+      "escalate",
+      "collect_more_data"
+    ],
+    "target_in_or_missing": [
+      "",
+      "system",
+      "machine",
+      "equipment",
+      "maintenance team",
+      "operator"
+    ],
+    "requires_no_valid_rationale_evidence": true
+  }
+}

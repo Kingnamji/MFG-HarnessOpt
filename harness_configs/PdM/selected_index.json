@@ -1,0 +1,47 @@
+{
+  "1701:trace": {
+    "candidate_id": "M4_PdM_1701_iter03_candidate02",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1701:metric_only": {
+    "candidate_id": "cmp_metric_only_1701_i04_s01",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1701:copro": {
+    "candidate_id": "cmp_copro_1701_i03_s01",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1702:trace": {
+    "candidate_id": "M4_PdM_1702_iter01_candidate03",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1702:metric_only": {
+    "candidate_id": "cmp_metric_only_1702_i04_s01",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1702:copro": {
+    "candidate_id": "cmp_copro_1702_i01_s02",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1703:trace": {
+    "candidate_id": "M4_PdM_1703_iter03_candidate03",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1703:metric_only": {
+    "candidate_id": "cmp_metric_only_1703_i02_s03",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  },
+  "1703:copro": {
+    "candidate_id": "cmp_copro_1703_i03_s04",
+    "search_bundle": "PdM-search.jsonl.gz",
+    "fallback": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "monitor": {
+    "requires": [
+      "valid_schema"
+    ]
+  },
+  "inspect": {
+    "requires": [
+      "target_present"
+    ]
+  },
+  "verify_sensor": {
+    "requires": [
+      "valid_telemetry_or_sensor_evidence"
+    ]
+  },
+  "collect_more_data": {
+    "requires": [
+      "target_or_missing_evidence_reason"
+    ]
+  },
+  "escalate": {
+    "requires": [
+      "valid_schema"
+    ],
+    "generic_if": [
+      "no_target",
+      "no_valid_evidence"
+    ]
+  },
+  "schedule_maintenance": {
+    "requires": [
+      "at_least_one_valid_evidence_item"
+    ]
+  },
+  "replace_component": {
+    "requires": [
+      "component_specific_predicted_label",
+      "target_matches_predicted_label",
+      "at_least_two_valid_supporting_evidence_items"
+    ]
+  },
+  "adjust_parameter": {
+    "always_unsafe": true
+  },
+  "shutdown": {
+    "always_unsafe": true
+  }
+}

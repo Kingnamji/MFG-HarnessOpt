@@ -1,0 +1,40 @@
+{
+  "action_types": {
+    "monitor": {
+      "risk": "low",
+      "allowed": true
+    },
+    "inspect": {
+      "risk": "low",
+      "allowed": true
+    },
+    "verify_sensor": {
+      "risk": "low_medium",
+      "allowed": true
+    },
+    "collect_more_data": {
+      "risk": "low",
+      "allowed": true
+    },
+    "escalate": {
+      "risk": "low",
+      "allowed": true
+    },
+    "schedule_maintenance": {
+      "risk": "medium",
+      "allowed": true
+    },
+    "replace_component": {
+      "risk": "high",
+      "allowed": true
+    },
+    "adjust_parameter": {
+      "risk": "out_of_scope",
+      "allowed": false
+    },
+    "shutdown": {
+      "risk": "out_of_scope",
+      "allowed": false
+    }
+  }
+}

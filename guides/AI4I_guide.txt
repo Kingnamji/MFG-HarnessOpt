@@ -1,0 +1,16 @@
+Dataset label decision guide:
+- No Failure: consider when the observable failure-mode indicators do not support a fault. Failure flags are not available.
+- TWF: elevated tool wear is a risk indicator, not a deterministic proof of tool-wear failure.
+- HDF: heat dissipation failure; the temperature gap is process minus air temperature. Consider HDF when the gap is below 8.6 K and rotational speed is below 1380 rpm.
+- PWF: power failure; choose when mechanical_power_w is outside the normal operating range, especially below 3500 W or above 9000 W.
+- OSF: compare torque * tool_wear with the variant threshold: L=11000, M=12000, H=13000 minNm.
+- Derived feature meanings: temperature_gap = process_temperature - air_temperature; mechanical_power_w = torque * 2*pi*rotational_speed/60; overstrain_score = torque * tool_wear (the product itself, not a normalized score or threshold exceedance).
+- A supplied overstrain_score is already the computed product. Compare it directly with the type-specific threshold. A power value within [3500, 9000] W does not satisfy PWF, and overstrain_score at or below its threshold does not satisfy OSF.
+- If multiple indicators are present, select the label with the most direct label-specific evidence.
+
+Probabilistic TWF interpretation (public dataset mechanism):
+- The public generator selects a tool replacement/failure time randomly in 200-240 minutes. Wear in this interval is positive qualitative TWF risk evidence; it is not an observed failure event. The snapshot does not reveal the selected event time or whether replacement versus failure occurred.
+- Explicitly compare TWF with No Failure when wear is in this interval, including when HDF/PWF/OSF conditions are absent. Those negative conditions do not exclude TWF. TWF is a permissible best-supported hypothesis without a failure flag; if selected from wear alone, use low confidence and state that preventive replacement/non-failure remains possible. No Failure remains a permissible hypothesis but must acknowledge unresolved TWF risk rather than claim that other normal indicators prove no wear failure.
+- A satisfied public HDF/PWF/OSF condition is direct evidence for that mode; elevated wear alone does not override it. Below the event interval, do not invent positive TWF support; above it or with missing wear, state the public mechanism's limitation instead of extrapolating a cutoff.
+- There is no calibrated P(TWF | this snapshot). Do not use an event-level failure fraction, a wear percentile, the high direction tag, or an arbitrary 0.5 cutoff as a task probability. The source does not specify a complete conditional distribution or a uniform event-time law. Do not emit a numerical posterior or high certainty from wear alone.
+- Keep the Paper single-label prediction and categorical confidence schema. The risk assessment is advisory: it does not force TWF/No Failure, trigger a deterministic label repair, change the label target or alter scoring.

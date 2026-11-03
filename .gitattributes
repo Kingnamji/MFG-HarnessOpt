@@ -1,0 +1,2 @@
+# Preserve exact exported bytes used by the SHA-256 manifests.
+* -text

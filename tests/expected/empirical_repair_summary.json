@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "dataset": "AI4I",
+      "method": "M0",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M1",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M2",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M3",
+      "reports": 450,
+      "repairs": 82,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": 0.0
+    },
+    {
+      "dataset": "AI4I",
+      "method": "M4",
+      "reports": 1350,
+      "repairs": 126,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": 0.0
+    },
+    {
+      "dataset": "AI4I",
+      "method": "Metric-only",
+      "reports": 1350,
+      "repairs": 174,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": 0.0
+    },
+    {
+      "dataset": "AI4I",
+      "method": "COPRO-style",
+      "reports": 1350,
+      "repairs": 176,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": 0.0
+    },
+    {
+      "dataset": "PdM",
+      "method": "M0",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "M1",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "M2",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "reports": 450,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "reports": 1350,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "Metric-only",
+      "reports": 1350,
+      "repairs": 0,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": null
+    },
+    {
+      "dataset": "PdM",
+      "method": "COPRO-style",
+      "reports": 1350,
+      "repairs": 1,
+      "F10": 0,
+      "pre_filter_failures": 0,
+      "conditional_F10_rate": 0.0
+    }
+  ],
+  "preserved_case_pairing": true,
+  "new_model_calls": 0,
+  "fit_calls": 0,
+  "new_empirical_test_evaluations": 0,
+  "interpretation": "Repeated report allocations, including shared fallback allocations; not independent repair trials."
+}

@@ -1,0 +1,68 @@
+{
+  "dataset": "Azure PdM",
+  "random_seed": 42,
+  "split_sizes": {
+    "search": 100,
+    "validation": 50,
+    "test": 150
+  },
+  "task_unit": "failure_event",
+  "split_strategy": "machine_level_split_then_stratified_task_sampling",
+  "candidate_labels": [
+    "comp1",
+    "comp2",
+    "comp3",
+    "comp4"
+  ],
+  "windows": {
+    "telemetry_24h_before_failure": {
+      "start": "failure_time - 24h",
+      "end": "failure_time"
+    },
+    "error_24h_before_failure": {
+      "start": "failure_time - 24h",
+      "end": "failure_time"
+    },
+    "maintenance_30d_before_failure": {
+      "start": "failure_time - 30d",
+      "end": "failure_time"
+    },
+    "baseline_30d_to_7d": {
+      "start": "failure_time - 30d",
+      "end": "failure_time - 7d"
+    }
+  },
+  "telemetry_evidence": {
+    "variables": [
+      "volt",
+      "rotate",
+      "pressure",
+      "vibration"
+    ],
+    "statistic": "max_abs_zscore",
+    "z_threshold": 2.0,
+    "max_evidence_per_task": 2,
+    "role": "symptomatic"
+  },
+  "error_evidence": {
+    "window": "error_24h_before_failure",
+    "statistic": "event_occurrence",
+    "max_evidence_per_task": 3,
+    "role": "symptomatic"
+  },
+  "maintenance_evidence": {
+    "window": "maintenance_30d_before_failure",
+    "statistic": "recent_record",
+    "max_evidence_per_task": 3,
+    "role": "contextual",
+    "causal_by_default": false
+  },
+  "metadata_context": {
+    "included_in_tasks": true,
+    "included_as_required_proxy_evidence": false,
+    "role": "contextual"
+  },
+  "protocol_version": "observation_only_v2",
+  "offline_only_targets": true,
+  "reference_target_policy": "Label-conditioned observational coverage; not physical causal ground truth. Azure maintenance is always contextual. AI4I No Failure uses observable indicators, not failure flags."
+}

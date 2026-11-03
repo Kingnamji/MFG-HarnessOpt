@@ -1,0 +1,67 @@
+{
+  "format": "gzip-json-lines",
+  "release_url": "https://github.com/Kingnamji/MFG-HarnessOpt/releases",
+  "release_status": "private_preparation",
+  "assets": [
+    {
+      "file": "AI4I-records.jsonl.gz",
+      "sha256": "2bee25f57c40b8bc9c64ab8fe1cae18932ff439bdf4d3320b4d5ccaf5213894c",
+      "bytes": 138279164,
+      "records": 9900
+    },
+    {
+      "file": "AI4I-search.jsonl.gz",
+      "sha256": "c27556a5702f49012b4bab80b29ed976026fd635a229a0c21acc5a08050af599",
+      "bytes": 362685973,
+      "records": 14550
+    },
+    {
+      "file": "AI4I-calls.jsonl.gz",
+      "sha256": "187d9f1aafca0703120341e75d935bc3848473ccd5f67d6bffae2101d503917e",
+      "bytes": 200902002,
+      "records": 22845
+    },
+    {
+      "file": "AI4I-usage.jsonl.gz",
+      "sha256": "ac2bd2c6351790c75282f43480811bf90b6348b7bc067ef30d85ed8123dd3c4e",
+      "bytes": 5228492,
+      "records": 22845
+    },
+    {
+      "file": "AI4I-analysis.jsonl.gz",
+      "sha256": "fc37d65e8a905f7a81004c874a99e0fbb83774900f34a53a3394aceaae848ca4",
+      "bytes": 13866947,
+      "records": 1
+    },
+    {
+      "file": "PdM-records.jsonl.gz",
+      "sha256": "c5552a44f852d6d062e3d81a65c6ff0d9217a14422375dd5c56f7ace0b2214b5",
+      "bytes": 209358203,
+      "records": 11250
+    },
+    {
+      "file": "PdM-search.jsonl.gz",
+      "sha256": "8f73dafda4c04131c2185118efef4f11151579c725f909ed0a8dfc3f966842c2",
+      "bytes": 360263327,
+      "records": 15829
+    },
+    {
+      "file": "PdM-calls.jsonl.gz",
+      "sha256": "3952e5eb8aab20d1d50d700351c90c081b9f355a011620e48a1b03c1a4b718f8",
+      "bytes": 284157436,
+      "records": 23075
+    },
+    {
+      "file": "PdM-usage.jsonl.gz",
+      "sha256": "dcc3006335fd6e3e104724ac54c920a59da69ff13d5fa604d409428632431940",
+      "bytes": 5313822,
+      "records": 23075
+    },
+    {
+      "file": "PdM-analysis.jsonl.gz",
+      "sha256": "fe7875300783648912eff88b1b13cccac8f2746a3da53636b598fc1d95c16433",
+      "bytes": 15953148,
+      "records": 1
+    }
+  ]
+}

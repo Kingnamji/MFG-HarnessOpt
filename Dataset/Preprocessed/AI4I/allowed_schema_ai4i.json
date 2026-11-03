@@ -1,0 +1,35 @@
+{
+  "dataset": "AI4I 2020",
+  "allowed_sources": {
+    "machine_features": [
+      "type",
+      "air_temperature",
+      "process_temperature",
+      "rotational_speed",
+      "torque",
+      "tool_wear"
+    ],
+    "derived_features": [
+      "temperature_gap",
+      "mechanical_power_w",
+      "overstrain_score"
+    ]
+  },
+  "candidate_labels": [
+    "No Failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF"
+  ],
+  "evidence_roles": [
+    "symptomatic",
+    "exclusionary",
+    "contextual"
+  ],
+  "window_values": [
+    "static_instance"
+  ],
+  "protocol_version": "observation_only_v2",
+  "generation_evidence_is_observation_only": true
+}

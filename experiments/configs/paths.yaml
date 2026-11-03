@@ -1,0 +1,37 @@
+project_root: .
+dataset:
+  root_dir: Dataset
+  preprocessed_dir: Dataset/Preprocessed
+  ai4i:
+    dir: Dataset/Preprocessed/AI4I
+    tasks: Dataset/Preprocessed/AI4I/tasks_ai4i.csv
+    features: Dataset/Preprocessed/AI4I/ai4i_features.csv
+    proxy_evidence: Dataset/Preprocessed/AI4I/proxy_evidence_ai4i.csv
+    generation_evidence: Dataset/Preprocessed/AI4I/generation_evidence_ai4i.csv
+    allowed_schema: Dataset/Preprocessed/AI4I/allowed_schema_ai4i.json
+    metric_config: Dataset/Preprocessed/AI4I/metric_config_ai4i.json
+  pdm:
+    dir: Dataset/Preprocessed/PdM
+    tasks: Dataset/Preprocessed/PdM/tasks_azure.csv
+    telemetry_summary: Dataset/Preprocessed/PdM/azure_telemetry_summary.csv
+    event_windows: Dataset/Preprocessed/PdM/event_windows_azure.csv
+    proxy_evidence: Dataset/Preprocessed/PdM/proxy_evidence_azure.csv
+    generation_evidence: Dataset/Preprocessed/PdM/generation_evidence_azure.csv
+    allowed_schema: Dataset/Preprocessed/PdM/allowed_schema_azure.json
+    metric_config: Dataset/Preprocessed/PdM/metric_config_azure.json
+    action_ontology: Dataset/Preprocessed/PdM/action_ontology.json
+    action_preconditions: Dataset/Preprocessed/PdM/action_preconditions.json
+    generic_action_rules: Dataset/Preprocessed/PdM/generic_action_rules.json
+outputs:
+  root_dir: outputs/root
+  smoke_test_dir: outputs/smoke_test
+  smoke_test_api_dir: outputs/smoke_test_api
+  search_dir: outputs/search
+  validation_dir: outputs/validation
+  final_test_dir: outputs/final_test
+  tables_dir: outputs/tables
+  logs_dir: outputs/logs
+  traces_dir: outputs/traces
+  reports_dir: outputs/reports
+artifacts:
+  docs_dir: docs

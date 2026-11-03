@@ -1,0 +1,22 @@
+Search-derived Azure component association guide:
+- These associations were computed only from the Azure PdM search split.
+- Treat them as weak background priors, not as deterministic label rules.
+- Do not select a component solely because it has the highest association probability.
+- Use an association only when the current evidence table contains the same source/field/value or source/field/direction pattern.
+- Prefer current-task evidence over aggregate associations.
+- If current-task evidence is ambiguous or conflicts with the guide, select the most plausible component with low confidence.
+- Do not expose or infer hidden task-level supports.
+- Maintenance evidence is contextual by default and should not be described as causal by itself.
+Associations:
+- errors:errorID:error3: most associated with comp2 in the search split (p=0.9143, n=35, confidence=high, distribution={'comp1': 0.0286, 'comp2': 0.9143, 'comp3': 0.0286, 'comp4': 0.0286})
+- errors:errorID:error2: most associated with comp2 in the search split (p=0.8889, n=36, confidence=high, distribution={'comp1': 0.0278, 'comp2': 0.8889, 'comp3': 0.0556, 'comp4': 0.0278})
+- errors:errorID:error5: most associated with comp4 in the search split (p=0.8276, n=29, confidence=high, distribution={'comp1': 0.0345, 'comp2': 0.069, 'comp3': 0.069, 'comp4': 0.8276})
+- errors:errorID:error1: most associated with comp1 in the search split (p=0.8214, n=28, confidence=high, distribution={'comp1': 0.8214, 'comp2': 0.0357, 'comp3': 0.0, 'comp4': 0.1429})
+- errors:errorID:error4: most associated with comp3 in the search split (p=0.7778, n=27, confidence=high, distribution={'comp1': 0.1111, 'comp2': 0.0741, 'comp3': 0.7778, 'comp4': 0.037})
+- telemetry:rotate:low: most associated with comp2 in the search split (p=0.6591, n=44, confidence=high, distribution={'comp1': 0.0682, 'comp2': 0.6591, 'comp3': 0.1818, 'comp4': 0.0909})
+- telemetry:vibration:high: most associated with comp4 in the search split (p=0.6216, n=37, confidence=high, distribution={'comp1': 0.1081, 'comp2': 0.1892, 'comp3': 0.0811, 'comp4': 0.6216})
+- telemetry:vibration:low: most associated with comp2 in the search split (p=0.6, n=15, confidence=high, distribution={'comp1': 0.3333, 'comp2': 0.6, 'comp3': 0.0667, 'comp4': 0.0})
+- telemetry:rotate:high: most associated with comp1 in the search split (p=0.6, n=10, confidence=high, distribution={'comp1': 0.6, 'comp2': 0.0, 'comp3': 0.2, 'comp4': 0.2})
+- telemetry:pressure:high: most associated with comp3 in the search split (p=0.5714, n=35, confidence=medium, distribution={'comp1': 0.0571, 'comp2': 0.1714, 'comp3': 0.5714, 'comp4': 0.2})
+- telemetry:volt:high: most associated with comp1 in the search split (p=0.5455, n=33, confidence=medium, distribution={'comp1': 0.5455, 'comp2': 0.1818, 'comp3': 0.1212, 'comp4': 0.1515})
+- maintenance:comp:comp4: most associated with comp2 in the search split (p=0.4211, n=38, confidence=low, distribution={'comp1': 0.3421, 'comp2': 0.4211, 'comp3': 0.2368, 'comp4': 0.0})

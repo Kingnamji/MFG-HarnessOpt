@@ -1,0 +1,32 @@
+Search-derived Azure component association guide
+================================================
+
+Leakage control:
+- Computed only from the Azure PdM search split.
+- Does not expose validation/test labels.
+- Does not expose task-level hidden supports.
+- Use as weak prior, not as ground truth for the current task.
+
+Search split summary:
+- n_tasks: 100
+- n_tasks_with_evidence: 100
+- label_counts: {'comp1': 23, 'comp2': 32, 'comp3': 21, 'comp4': 24}
+- evidence_source_counts: {'telemetry': 192, 'errors': 155, 'maintenance': 152}
+
+Top associations:
+- errors:errorID:error3: top=comp2, p=0.9143, n=35, confidence=high, distribution={'comp1': 0.0286, 'comp2': 0.9143, 'comp3': 0.0286, 'comp4': 0.0286}
+- errors:errorID:error2: top=comp2, p=0.8889, n=36, confidence=high, distribution={'comp1': 0.0278, 'comp2': 0.8889, 'comp3': 0.0556, 'comp4': 0.0278}
+- errors:errorID:error5: top=comp4, p=0.8276, n=29, confidence=high, distribution={'comp1': 0.0345, 'comp2': 0.069, 'comp3': 0.069, 'comp4': 0.8276}
+- errors:errorID:error1: top=comp1, p=0.8214, n=28, confidence=high, distribution={'comp1': 0.8214, 'comp2': 0.0357, 'comp3': 0.0, 'comp4': 0.1429}
+- errors:errorID:error4: top=comp3, p=0.7778, n=27, confidence=high, distribution={'comp1': 0.1111, 'comp2': 0.0741, 'comp3': 0.7778, 'comp4': 0.037}
+- telemetry:rotate:low: top=comp2, p=0.6591, n=44, confidence=high, distribution={'comp1': 0.0682, 'comp2': 0.6591, 'comp3': 0.1818, 'comp4': 0.0909}
+- telemetry:vibration:high: top=comp4, p=0.6216, n=37, confidence=high, distribution={'comp1': 0.1081, 'comp2': 0.1892, 'comp3': 0.0811, 'comp4': 0.6216}
+- telemetry:vibration:low: top=comp2, p=0.6, n=15, confidence=high, distribution={'comp1': 0.3333, 'comp2': 0.6, 'comp3': 0.0667, 'comp4': 0.0}
+- telemetry:rotate:high: top=comp1, p=0.6, n=10, confidence=high, distribution={'comp1': 0.6, 'comp2': 0.0, 'comp3': 0.2, 'comp4': 0.2}
+- telemetry:pressure:high: top=comp3, p=0.5714, n=35, confidence=medium, distribution={'comp1': 0.0571, 'comp2': 0.1714, 'comp3': 0.5714, 'comp4': 0.2}
+- telemetry:volt:high: top=comp1, p=0.5455, n=33, confidence=medium, distribution={'comp1': 0.5455, 'comp2': 0.1818, 'comp3': 0.1212, 'comp4': 0.1515}
+- maintenance:comp:comp4: top=comp2, p=0.4211, n=38, confidence=low, distribution={'comp1': 0.3421, 'comp2': 0.4211, 'comp3': 0.2368, 'comp4': 0.0} (Maintenance evidence is contextual by default and should not be treated as causal by itself.)
+- maintenance:comp:comp1: top=comp2, p=0.4, n=35, confidence=low, distribution={'comp1': 0.0286, 'comp2': 0.4, 'comp3': 0.3143, 'comp4': 0.2571} (Maintenance evidence is contextual by default and should not be treated as causal by itself.)
+- maintenance:comp:comp3: top=comp4, p=0.375, n=40, confidence=low, distribution={'comp1': 0.3, 'comp2': 0.325, 'comp3': 0.0, 'comp4': 0.375} (Maintenance evidence is contextual by default and should not be treated as causal by itself.)
+- telemetry:pressure:low: top=comp1, p=0.3571, n=14, confidence=low, distribution={'comp1': 0.3571, 'comp2': 0.2857, 'comp3': 0.0, 'comp4': 0.3571}
+- maintenance:comp:comp2: top=comp1, p=0.3077, n=39, confidence=low, distribution={'comp1': 0.3077, 'comp2': 0.2051, 'comp3': 0.2308, 'comp4': 0.2564} (Maintenance evidence is contextual by default and should not be treated as causal by itself.)

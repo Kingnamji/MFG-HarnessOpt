@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "dataset_scope": "AI4I and PdM authoritative fixed manifests",
+  "core_reproduction": {
+    "AI4I": {
+      "status": "PASS",
+      "allocation_groups": 66,
+      "saved_records": 9900,
+      "terminal_missing_records": 0,
+      "paired_comparisons": 12
+    },
+    "PdM": {
+      "status": "PASS",
+      "allocation_groups": 75,
+      "saved_records": 11250,
+      "terminal_missing_records": 9,
+      "paired_comparisons": 12
+    },
+    "network_calls": 0,
+    "model_calls": 0,
+    "fits": 0,
+    "new_report_evaluations": 0
+  },
+  "Holm_family_sizes": {
+    "optimizer_primary": 2,
+    "COPRO_secondary": 2,
+    "diagnosis": 6,
+    "M2_ablation": 14
+  },
+  "detector_software_checks": "PASS; not an estimate of field safety or expert utility",
+  "indexed_artifact_files": 10,
+  "indexed_artifact_bytes": 1596008514,
+  "dataset_binding": "PASS",
+  "scientific_request_response_payloads": "unchanged",
+  "publication_content_audit": "PASS",
+  "unresolved_content_findings": 0,
+  "local_path_metadata_normalized": true,
+  "private_workflow_documents_excluded": true,
+  "model_calls": 0,
+  "fits": 0,
+  "new_empirical_test_evaluations": 0
+}

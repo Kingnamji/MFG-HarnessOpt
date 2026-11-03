@@ -1,0 +1,203 @@
+# Experiment configuration for M0--M4 diagnostic harness evaluation.
+
+random_seed: 42
+protocol_version: observation_only_v2
+evaluation_policy_version: observable_checks_v3
+runtime_verification: observable_records_only
+offline_targets_for_repair: false
+
+datasets:
+  - AI4I
+  - PdM
+
+dataset_display_names:
+  AI4I: AI4I 2020
+  PdM: Azure PdM
+
+splits:
+  search:
+    ai4i_n: 100
+    pdm_n: 100
+    total_n: 200
+
+  validation:
+    ai4i_n: 50
+    pdm_n: 50
+    total_n: 100
+
+  test:
+    ai4i_n: 150
+    pdm_n: 150
+    total_n: 300
+
+smoke_test:
+  split: search
+  ai4i_n: 10
+  pdm_n: 10
+  methods:
+    - M0
+    - M1
+    - M2
+    - M3
+  require_proxy_evidence: true
+
+pilot:
+  split: search
+  ai4i_n: 20
+  pdm_n: 20
+  methods:
+    - M0
+    - M1
+    - M2
+    - M3
+  require_proxy_evidence: true
+
+methods:
+  baselines:
+    - M0
+    - M1
+    - M2
+    - M3
+
+  proposed:
+    - M4
+
+  final_test:
+    - M0
+    - M1
+    - M2
+    - M3
+    - M4
+
+harness_constraints:
+  fixed_base_model: true
+  expose_gold_label_to_llm: false
+  expose_proxy_supports_to_llm: false
+  expose_evaluator_internals_to_llm: false
+  expose_test_traces_to_optimizer: false
+  allow_dataset_modification: false
+  allow_gold_label_access: false
+
+m3_fixed_repair:
+  enabled: true
+  max_repair_steps: 1
+
+  repair_triggers:
+    schema_invalid: true
+    evidence_contradiction_F3: true
+    temporal_violation_F4: true
+    observable_evidence_error: true
+    source_hallucination_F5: true
+    causal_overclaim_F6: true
+    action_without_evidence_F7: true
+    high_risk_action_violation_F8: true
+    unsafe_recommendation_rate_gt: 0.0
+
+  repair_scope:
+    allow_predicted_label_revision: true
+    allow_evidence_revision: true
+    allow_action_revision: true
+    allow_limitation_revision: true
+    allow_new_sources: false
+    allow_unavailable_fields: false
+    allow_supports_from_input_table: false
+
+optimization:
+  enabled: true
+  proposer_mode: llm
+  proposer_schema_version: harness_patch_v1
+
+  seed_methods:
+    - M1
+    - M2
+    - M3
+
+  seed_harnesses:
+    - H_static
+    - H_tool_source
+    - H_verified
+
+  iterations: 4
+  candidate_generation: proposer_only
+  candidates_per_iteration: 3
+  max_new_candidates_per_iteration: 3
+  max_total_candidates: 15  # three seeds plus T4 x K3 proposer-authored candidates
+  budget_policy: explicit_shared_request_and_usd_limits_required_for_api
+  max_screened_validation_candidates: 4
+
+  search_split: search
+  validation_split: validation
+  final_test_split: test
+
+  failure_trace_sampling:
+    max_failure_traces_per_iteration: 20
+    max_per_task: 2
+    min_label_error_bundles: 4
+    min_verified_bundles: 10
+    include_failure_types:
+      - F1
+      - F2
+      - F3
+      - F4
+      - F5
+      - F6
+      - F7
+      - F8
+      - F9
+      - F10
+    prioritize_failure_types:
+      - F7
+      - F8
+      - F10
+      - F2
+      - F1
+
+  editable_modules:
+    - source_policy
+    - evidence_table_format
+    - prompt_instructions
+    - action_filter_rules
+    - repair_prompt
+    - repair_trigger_thresholds
+
+  frozen_modules:
+    - datasets
+    - gold_labels
+    - proxy_evidence_builder
+    - evaluator
+    - metric_definitions
+    - test_split
+    - candidate_labels
+    - hidden_supports_annotations
+
+candidate_acceptance:
+  policy_version: paired_M3_nonregression_v1
+  max_accuracy_drop: 0.0
+  max_macro_f1_drop: 0.0
+  require_J_not_worse_than_M3: true
+  note: Revised selection constraint; Paper J formula and weights are unchanged.
+
+candidate_screening:
+  strategy: multi_criteria_candidate_screening
+  keep_non_dominated_candidates: true
+  max_candidates_for_validation: 4
+
+  objectives:
+    maximize:
+      - macro_f1
+      - evidence_precision
+      - evidence_recall
+      - evidence_linked_action_ratio
+    minimize:
+      - unsupported_claim_rate
+      - unsafe_recommendation_rate
+      - generic_action_rate
+      - cost_per_report
+      - F10
+
+outputs:
+  save_reports_jsonl: true
+  save_traces_jsonl: true
+  save_metrics_by_task_csv: true
+  save_tables: true
+  save_config_snapshot: true

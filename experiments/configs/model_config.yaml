@@ -1,0 +1,40 @@
+default_model_profile: gpt54mini_standard
+profiles:
+  gpt54mini_standard:
+    model: gpt-5.4-mini-2026-03-17
+    api_mode: standard
+    price_input_per_1m: 0.75
+    price_cached_input_per_1m: 0.075
+    price_output_per_1m: 4.5
+    temperature: 0.0
+    max_output_tokens: 1200
+    timeout_sec: 120
+    max_retries: 0
+  dry_run:
+    model: dummy-model
+    api_mode: dry_run
+    price_input_per_1m: 0.0
+    price_cached_input_per_1m: 0.0
+    price_output_per_1m: 0.0
+    temperature: 0.0
+    max_output_tokens: 1200
+    timeout_sec: 10
+    max_retries: 0
+diagnosis_model_profile: gpt54mini_standard
+proposer_model_profile: gpt54mini_standard
+proposer_generation:
+  max_output_tokens: 4096
+  reasoning_effort: none
+  sdk_max_retries: 0
+  semantic_retries: 0
+  max_prompt_chars: 200000
+smoke_model_profile: gpt54mini_standard
+structured_output:
+  strict: true
+  schema_name: manufacturing_diagnostic_report
+logging:
+  save_raw_response: true
+  save_prompt_messages: true
+  save_token_usage: true
+  save_latency: true
+  save_cost: true

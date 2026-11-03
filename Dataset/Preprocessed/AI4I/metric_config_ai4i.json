@@ -1,0 +1,58 @@
+{
+  "dataset": "AI4I 2020",
+  "random_seed": 42,
+  "split_sizes": {
+    "search": 100,
+    "validation": 50,
+    "test": 150
+  },
+  "sampling": {
+    "strategy": "balanced_by_gold_label",
+    "per_class_sample_size": 60,
+    "included_labels": [
+      "No Failure",
+      "TWF",
+      "HDF",
+      "PWF",
+      "OSF"
+    ],
+    "excluded_rows": [
+      "RNF_positive_rows",
+      "multi_label_failure_rows"
+    ]
+  },
+  "derived_features": {
+    "temperature_gap": "process_temperature - air_temperature",
+    "mechanical_power_w": "torque * (2*pi*rotational_speed/60)",
+    "overstrain_score": "torque * tool_wear"
+  },
+  "evidence_rules": {
+    "TWF": [
+      "tool_wear high"
+    ],
+    "HDF": [
+      "temperature_gap low",
+      "rotational_speed low"
+    ],
+    "PWF": [
+      "mechanical_power_w out_of_range"
+    ],
+    "OSF": [
+      "overstrain_score high"
+    ],
+    "No Failure": [
+      "observable operating indicator coverage"
+    ]
+  },
+  "power_threshold_w": {
+    "low": 3500,
+    "high": 9000
+  },
+  "temporal_violation": {
+    "applicable": false,
+    "reason": "AI4I 2020 is a static tabular dataset without event timestamps."
+  },
+  "protocol_version": "observation_only_v2",
+  "offline_only_targets": true,
+  "reference_target_policy": "Label-conditioned observational coverage; not physical causal ground truth. Azure maintenance is always contextual. AI4I No Failure uses observable indicators, not failure flags."
+}

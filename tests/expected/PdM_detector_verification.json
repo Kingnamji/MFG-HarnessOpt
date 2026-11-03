@@ -1,0 +1,1438 @@
+{
+  "status": "PASS",
+  "dataset": "PdM",
+  "generation_calls": 0,
+  "network_calls": 0,
+  "fit_calls": 0,
+  "new_empirical_test_evaluations": 0,
+  "detector_rows": [
+    {
+      "id": "F4_valid_named_windows",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_valid_named_windows",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_telemetry_future_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_telemetry_future_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_error_wrong_source_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_error_wrong_source_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_maintenance_wrong_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_maintenance_wrong_window",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_exact",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_exact",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_iso_equivalent",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_iso_equivalent",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_future",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_future",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_mismatch_same_window",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_mismatch_same_window",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_malformed",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_timestamp_malformed",
+      "dataset": "PdM",
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 1,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_order_independent_match",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F4_order_independent_match",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_maintenance_context",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_maintenance_context",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_maintenance_causal",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_maintenance_causal",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_machine_metadata_causal",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_machine_metadata_causal",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 1,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_telemetry_symptomatic",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_telemetry_symptomatic",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_negation_in_optional_text",
+      "dataset": "PdM",
+      "scope": "free_text_outside_structured_detector",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_negation_in_optional_text",
+      "dataset": "PdM",
+      "scope": "free_text_outside_structured_detector",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_uncertainty_in_limitations",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F6_uncertainty_in_limitations",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_Azure_replace_two_diagnostic",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_Azure_replace_two_diagnostic",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_Azure_one_evidence",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_one_evidence",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_duplicate_refs",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_duplicate_refs",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_missing_refs",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_missing_refs",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_context_as_second",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_context_as_second",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_wrong_target",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_wrong_target",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_inspect_without_highrisk",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_Azure_inspect_without_highrisk",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 0
+      }
+    },
+    {
+      "id": "F8_Azure_shutdown",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_shutdown",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_adjust_parameter",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_adjust_parameter",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_invalid_numeric_evidence",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_Azure_invalid_numeric_evidence",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_azure_context_only",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_azure_context_only",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_target_comp20_substring",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_target_comp20_substring",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_schema_forbidden_replace",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_schema_forbidden_replace",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_repeated_claim_id",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    },
+    {
+      "id": "F8_repeated_claim_id",
+      "dataset": "PdM",
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "expected": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      },
+      "actual": {
+        "F4": 0,
+        "F6": 0,
+        "F8": 1
+      }
+    }
+  ],
+  "repair_states": [
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "no_repair",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "wrong_gold_only",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 1,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "corrected_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "persistent_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "introduced_window",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "introduced_schema",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "filter_clears_action",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M3",
+      "id": "action_cleared_value_persists",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "no_repair",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "wrong_gold_only",
+      "expected": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "actual": {
+        "repair_count": 0,
+        "F10": 0,
+        "pre_filter_failed": null
+      },
+      "final_F1": 1,
+      "scripted_report_requests": 1
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "corrected_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": false
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "persistent_value",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "introduced_window",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "introduced_schema",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "filter_clears_action",
+      "expected": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 0,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    },
+    {
+      "dataset": "PdM",
+      "method": "M4",
+      "id": "action_cleared_value_persists",
+      "expected": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "actual": {
+        "repair_count": 1,
+        "F10": 1,
+        "pre_filter_failed": true
+      },
+      "final_F1": 0,
+      "scripted_report_requests": 2
+    }
+  ],
+  "summary": [
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F4",
+      "positive": 3,
+      "negative": 2,
+      "TP": 3,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F4",
+      "positive": 3,
+      "negative": 2,
+      "TP": 3,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "optional_timestamp_extension",
+      "route": "runtime",
+      "category": "F4",
+      "positive": 3,
+      "negative": 2,
+      "TP": 3,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "optional_timestamp_extension",
+      "route": "offline",
+      "category": "F4",
+      "positive": 3,
+      "negative": 2,
+      "TP": 3,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F6",
+      "positive": 2,
+      "negative": 3,
+      "TP": 2,
+      "FN": 0,
+      "TN": 3,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F6",
+      "positive": 2,
+      "negative": 3,
+      "TP": 2,
+      "FN": 0,
+      "TN": 3,
+      "FP": 0
+    },
+    {
+      "scope": "free_text_outside_structured_detector",
+      "route": "runtime",
+      "category": "F6",
+      "positive": 0,
+      "negative": 1,
+      "TP": 0,
+      "FN": 0,
+      "TN": 1,
+      "FP": 0
+    },
+    {
+      "scope": "free_text_outside_structured_detector",
+      "route": "offline",
+      "category": "F6",
+      "positive": 0,
+      "negative": 1,
+      "TP": 0,
+      "FN": 0,
+      "TN": 1,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "runtime",
+      "category": "F8",
+      "positive": 12,
+      "negative": 2,
+      "TP": 12,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "structured_report",
+      "route": "offline",
+      "category": "F8",
+      "positive": 12,
+      "negative": 2,
+      "TP": 12,
+      "FN": 0,
+      "TN": 2,
+      "FP": 0
+    },
+    {
+      "scope": "repair_control_flow",
+      "route": "M3",
+      "category": "F10",
+      "positive": 4,
+      "negative": 4,
+      "TP": 4,
+      "FN": 0,
+      "TN": 4,
+      "FP": 0
+    },
+    {
+      "scope": "repair_control_flow",
+      "route": "M4",
+      "category": "F10",
+      "positive": 4,
+      "negative": 4,
+      "TP": 4,
+      "FN": 0,
+      "TN": 4,
+      "FP": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "dataset": "Azure PdM",
+  "allowed_sources": {
+    "telemetry": [
+      "volt",
+      "rotate",
+      "pressure",
+      "vibration"
+    ],
+    "errors": [
+      "errorID"
+    ],
+    "maintenance": [
+      "comp"
+    ],
+    "machines": [
+      "model",
+      "age"
+    ]
+  },
+  "candidate_labels": [
+    "comp1",
+    "comp2",
+    "comp3",
+    "comp4"
+  ],
+  "evidence_roles": [
+    "symptomatic",
+    "contextual"
+  ],
+  "window_values": [
+    "telemetry_24h_before_failure",
+    "error_24h_before_failure",
+    "maintenance_30d_before_failure",
+    "static"
+  ],
+  "causal_overclaim_rule": {
+    "contextual_sources": [
+      "maintenance",
+      "machines"
+    ],
+    "rule": "maintenance and machine metadata are contextual by default; causal use is tagged as causal overclaim."
+  },
+  "protocol_version": "observation_only_v2",
+  "generation_evidence_is_observation_only": true
+}

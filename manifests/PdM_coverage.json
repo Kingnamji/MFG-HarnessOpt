@@ -1,0 +1,52 @@
+{
+  "dataset": "PdM",
+  "test_groups": 57,
+  "CPU_groups": 6,
+  "same_label_groups": 12,
+  "physical_calls": 23075,
+  "statuses": {
+    "completed": 23062,
+    "usage_reconciled_unbilled": 3,
+    "incomplete": 10
+  },
+  "costs": {
+    "cost_usd_actual": 98.36405939999969,
+    "cost_usd_uncached": 143.65182899999888
+  },
+  "raw_integrity": {
+    "request_unchanged": 23075,
+    "response_unchanged": 23072
+  },
+  "assets": [
+    {
+      "file": "PdM-records.jsonl.gz",
+      "sha256": "c5552a44f852d6d062e3d81a65c6ff0d9217a14422375dd5c56f7ace0b2214b5",
+      "bytes": 209358203,
+      "records": 11250
+    },
+    {
+      "file": "PdM-search.jsonl.gz",
+      "sha256": "8f73dafda4c04131c2185118efef4f11151579c725f909ed0a8dfc3f966842c2",
+      "bytes": 360263327,
+      "records": 15829
+    },
+    {
+      "file": "PdM-calls.jsonl.gz",
+      "sha256": "3952e5eb8aab20d1d50d700351c90c081b9f355a011620e48a1b03c1a4b718f8",
+      "bytes": 284157436,
+      "records": 23075
+    },
+    {
+      "file": "PdM-usage.jsonl.gz",
+      "sha256": "dcc3006335fd6e3e104724ac54c920a59da69ff13d5fa604d409428632431940",
+      "bytes": 5313822,
+      "records": 23075
+    },
+    {
+      "file": "PdM-analysis.jsonl.gz",
+      "sha256": "fe7875300783648912eff88b1b13cccac8f2746a3da53636b598fc1d95c16433",
+      "bytes": 15953148,
+      "records": 1
+    }
+  ]
+}
